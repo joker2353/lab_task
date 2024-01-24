@@ -15,9 +15,9 @@ public class ShapeFactory {
         if (shapeType == null) {
             return null;
         }
-        if (shapeType.equalsIgnoreCase("RECTANGLE")) {
+        if (shapeType.trim().equalsIgnoreCase("RECTANGLE")) {
             return new Rectangle();
-        } else if (shapeType.equalsIgnoreCase("SQUARE")) {
+        } else if (shapeType.trim().equalsIgnoreCase("SQUARE")) {
             return new Square();
         }
         return null;
